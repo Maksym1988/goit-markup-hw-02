@@ -1,16 +1,15 @@
 :root {
-  --primary-text-color: #434455;
-  --title-text-color: #2e2f42;
-  --active-text-color: #4d5ae5;
+  --body-text-slate: #434455;
+  --headings-navy-blue: #2e2f42;
+  --focused-iris: #4d5ae5;
+  --pressed-state-ocean: #404bbf;
+  --light-cloud: #f4f4fd;
+  --cornflower: #e7e9fc;
 }
 
 body {
   background-color: #ffffff;
-  color: var(--primary-text-color);
-}
-
-#ul {
-  list-style: none;
+  color: var(--body-text-slate);
 }
 
 /* Header */
@@ -25,66 +24,82 @@ body {
 
 .logo {
   text-decoration: none;
-  color: var(--title-text-color);
+  color: var(--headings-navy-blue);
 }
 
 .ingredient-logo {
-  color: var(--active-text-color);
+  color: var(--focused-iris);
 }
 
 /* Site nav */
 .site-nav .link {
-  color: var(--title-text-color);
+  color: var(--headings-navy-blue);
 }
-.site-nav .link:hover {
-  color: var(--primary-text-color);
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--pressed-state-ocean);
 }
-.site-nav .link:active {
-  color: var(--active-text-color);
-}
+
 /* Contacts */
 .contacts .link {
-  color: var(--primary-text-color);
+  color: var(--body-text-slate);
+}
+.contacts .link:hover,
+.contacts .link:focus {
+  color: var(--pressed-state-ocean);
 }
 /* Hero */
 
 .hero {
-  background-color: var(--title-text-color);
+  background-color: var(--headings-navy-blue);
 }
 .hero-title {
   color: #ffffff;
 }
 .btn-hero {
-  background-color: var(--active-text-color);
+  background-color: var(--focused-iris);
   color: #ffffff;
 }
-.btn-hero:active {
-  background-color: #404bbf;
+.btn-hero:hover,
+.btn-hero:focus {
+  background-color: var(--pressed-state-ocean);
 }
 /* Section */
 .section-title,
 .title {
-  color: var(--title-text-color);
+  color: var(--headings-navy-blue);
 }
 
 .section-team {
-  background-color: #f4f4fd;
+  background-color: var(--light-cloud);
 }
-.list-team,
-.list-project {
+.item-team,
+.item-project {
   background-color: #ffffff;
+}
+
+/* Filters */
+
+.btn {
+  background-color: var(--light-cloud);
+  color: var(--focused-iris);
+}
+.btn:hover,
+.btn:focus {
+  background-color: var(--pressed-state-ocean);
+  color: #ffffff;
 }
 
 /* Footer */
 
 .footer {
-  background-color: var(--title-text-color);
+  background-color: var(--headings-navy-blue);
 }
 
 .title-footer {
-  color: #f4f4fd;
+  color: var(--light-cloud);
 }
 
 .text-foter {
-  color: #e7e9fc;
+  color: var(--cornflower);
 }
