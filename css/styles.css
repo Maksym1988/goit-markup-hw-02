@@ -1,0 +1,90 @@
+:root {
+  --primary-text-color: #434455;
+  --title-text-color: #2e2f42;
+  --active-text-color: #4d5ae5;
+}
+
+body {
+  background-color: #ffffff;
+  color: var(--primary-text-color);
+}
+
+#ul {
+  list-style: none;
+}
+
+/* Header */
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.logo {
+  text-decoration: none;
+  color: var(--title-text-color);
+}
+
+.ingredient-logo {
+  color: var(--active-text-color);
+}
+
+/* Site nav */
+.site-nav .link {
+  color: var(--title-text-color);
+}
+.site-nav .link:hover {
+  color: var(--primary-text-color);
+}
+.site-nav .link:active {
+  color: var(--active-text-color);
+}
+/* Contacts */
+.contacts .link {
+  color: var(--primary-text-color);
+}
+/* Hero */
+
+.hero {
+  background-color: var(--title-text-color);
+}
+.hero-title {
+  color: #ffffff;
+}
+.btn-hero {
+  background-color: var(--active-text-color);
+  color: #ffffff;
+}
+.btn-hero:active {
+  background-color: #404bbf;
+}
+/* Section */
+.section-title,
+.title {
+  color: var(--title-text-color);
+}
+
+.section-team {
+  background-color: #f4f4fd;
+}
+.list-team,
+.list-project {
+  background-color: #ffffff;
+}
+
+/* Footer */
+
+.footer {
+  background-color: var(--title-text-color);
+}
+
+.title-footer {
+  color: #f4f4fd;
+}
+
+.text-foter {
+  color: #e7e9fc;
+}
