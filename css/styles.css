@@ -54,7 +54,7 @@ body {
 }
 
 /* ---------------- Contacts ---------------- */
-.address {
+.contacts-nav {
   font-style: normal;
 }
 
@@ -107,8 +107,8 @@ body {
   margin: -1px;
 }
 
-.section-title-works,
-.section-title-team {
+.part-title-works,
+.part-title-team {
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
@@ -122,7 +122,7 @@ body {
   color: var(--dark);
 }
 
-.section-team {
+.part-team {
   background-color: var(--light);
 }
 .item-team,
@@ -151,7 +151,7 @@ body {
 
 /* ---------------- Footer ---------------- */
 
-.footer {
+.site-footer {
   background-color: var(--dark);
 }
 
