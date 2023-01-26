@@ -19,6 +19,7 @@ body {
 }
 
 /* ---------------- Header --------------- */
+
 .list {
   list-style: none;
 }
@@ -38,7 +39,7 @@ body {
   color: var(--headings);
 }
 
-.ingredient-logo {
+.accent {
   color: var(--primary-brand);
 }
 
@@ -48,12 +49,14 @@ body {
   font-weight: 500;
   color: var(--dark);
 }
+
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--pressed-state);
 }
 
 /* ---------------- Contacts ---------------- */
+
 .contacts-nav {
   font-style: normal;
 }
@@ -61,6 +64,7 @@ body {
 .contacts .link {
   color: var(--text);
 }
+
 .contacts .link:hover,
 .contacts .link:focus {
   color: var(--pressed-state);
@@ -71,12 +75,14 @@ body {
 .hero {
   background-color: var(--dark);
 }
+
 .hero-title {
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
   color: #ffffff;
 }
+
 .btn-hero {
   font-family: inherit;
   font-weight: 500;
@@ -87,6 +93,7 @@ body {
   background-color: var(--primary-brand);
   color: #ffffff;
 }
+
 .btn-hero:hover,
 .btn-hero:focus {
   background-color: var(--pressed-state);
@@ -125,6 +132,7 @@ body {
 .part-team {
   background-color: var(--light);
 }
+
 .item-team,
 .item-project {
   background-color: #ffffff;
