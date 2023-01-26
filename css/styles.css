@@ -1,19 +1,24 @@
 :root {
-  --body-text-slate: #434455;
-  --headings-navy-blue: #2e2f42;
-  --focused-iris: #4d5ae5;
-  --pressed-state-ocean: #404bbf;
-  --light-cloud: #f4f4fd;
-  --cornflower: #e7e9fc;
+  --text: #434455;
+  --dark: #2e2f42;
+  --primary-brand: #4d5ae5;
+  --pressed-state: #404bbf;
+  --light: #f4f4fd;
+  --accent: #e7e9fc;
+  --success: #31d0aa;
+  --subtle-text: #8e8f99;
 }
 
 body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   background-color: #ffffff;
-  color: var(--body-text-slate);
+  color: var(--text);
 }
 
-/* Header */
-
+/* ---------------- Header --------------- */
 .list {
   list-style: none;
 }
@@ -23,88 +28,137 @@ body {
 }
 
 .logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
   text-decoration: none;
-  color: var(--headings-navy-blue);
+  text-transform: uppercase;
+  color: var(--headings);
 }
 
 .ingredient-logo {
-  color: var(--focused-iris);
+  color: var(--primary-brand);
 }
 
-/* Site nav */
+/* ---------------- Site nav ---------------- */
 
 .site-nav .link {
-  color: var(--headings-navy-blue);
+  font-weight: 500;
+  color: var(--dark);
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
-  color: var(--pressed-state-ocean);
+  color: var(--pressed-state);
 }
 
-/* Contacts */
+/* ---------------- Contacts ---------------- */
+.address {
+  font-style: normal;
+}
 
 .contacts .link {
-  color: var(--body-text-slate);
+  color: var(--text);
 }
 .contacts .link:hover,
 .contacts .link:focus {
-  color: var(--pressed-state-ocean);
+  color: var(--pressed-state);
 }
 
-/* Hero */
+/* ---------------- Hero ---------------- */
 
 .hero {
-  background-color: var(--headings-navy-blue);
+  background-color: var(--dark);
 }
 .hero-title {
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
   color: #ffffff;
 }
 .btn-hero {
-  background-color: var(--focused-iris);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  background-color: var(--primary-brand);
   color: #ffffff;
 }
 .btn-hero:hover,
 .btn-hero:focus {
-  background-color: var(--pressed-state-ocean);
+  background-color: var(--pressed-state);
 }
 
-/* Section */
+/* ---------------- Section ---------------- */
 
-.section-title,
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.section-title-works,
+.section-title-team {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  color: var(--dark);
+}
+
 .title {
-  color: var(--headings-navy-blue);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--dark);
 }
 
 .section-team {
-  background-color: var(--light-cloud);
+  background-color: var(--light);
 }
 .item-team,
 .item-project {
   background-color: #ffffff;
 }
 
-/* Filters */
+/* ---------------- Filters ---------------- */
 
 .btn {
-  background-color: var(--light-cloud);
-  color: var(--focused-iris);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  background-color: var(--accent);
+  color: var(--primary-brand);
 }
+
 .btn:hover,
 .btn:focus {
-  background-color: var(--pressed-state-ocean);
+  background-color: var(--pressed-state);
   color: #ffffff;
 }
 
-/* Footer */
+/* ---------------- Footer ---------------- */
 
 .footer {
-  background-color: var(--headings-navy-blue);
+  background-color: var(--dark);
 }
 
 .title-footer {
-  color: var(--light-cloud);
+  color: var(--light);
 }
 
-.text-foter {
-  color: var(--cornflower);
+.text-footer {
+  color: var(--accent);
 }
